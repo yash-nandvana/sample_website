@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- link css -->
-   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <title>project 1</title>
 </head>
+
 <body>
 
   <!-- navbar -->
-  <div class="navbar">
+  <nav>
     <div class="logo">
       <div class="shape_1"></div>
       <div class="shape_2 white_round"></div>
@@ -20,110 +22,122 @@
       <div class="shape_6"></div>
     </div>
 
-    <div class="nav_menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Service Map</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Our Services</a></li>
+      <li><a href="#">Service Map</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
 
-    <div class="button">
-      Sign In
-    </div>
-  </div>
+    <button>Sign In</button>
+  </nav>
 
   <!-- main section -->
-  <div class="section1">
-    <div class="section1_1">
-      <h1>Providing Industry Leading Solutions for</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant cras morbi hendrerit nunc vel sapien. In habitasse at diam suspendisse non vitae fermentum, 
-        pharetra arcu. Viverra a morbi ut donec in. Ac diam, at sed cras nisi. 
-      </p>
-      <button>Learn more <img src="./assets/image/Arrow 1.png" alt="arrow1"></button>
-    </div>
+  <main class="container">
 
-    <div class="section1_2">
-      <img src="./assets/image/Ellipse 1.png" alt="shape_7">
-      <img src="./assets/image/bro.png" alt="bro">
-    </div>
-  </div>
-
-  <!-- about section -->
-  <div class="section2">
-    <div class="section2_1">
-      <h1>About Company
-      </h1>
-    </div>
-    <div class="section2_2">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget duis mi nunc bibendum. Tellus elementum nec lorem eget dictumst. Risus in gravida eu, 
-        enim lorem. Sed consequat ut suspendisse eros. Nunc nunc accumsan, viverra enim. Mi.
-      </p>
-    </div>
-  </div>
-
-  <!-- services section -->
-  <div class="section3">
-    <h1>Our Services</h1>
-    <div class="section3_1">
-      <div class="section3_text">
-        <h1>Non-IT enterprises</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat bibendum sit felis, sollicitudin et. Nulla aliquet integer hac ac morbi.</p>
-        <button>Learn More <img src="./assets/image/Arrow 1.png" alt="arrow2"></button>
+    <!-- info section -->
+    <section class="section1">
+      <div class="section1_1">
+        <h2>Providing Industry Leading Solutions for</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitant cras morbi hendrerit nunc vel sapien. In
+          habitasse at diam suspendisse non vitae fermentum,
+          pharetra arcu. Viverra a morbi ut donec in. Ac diam, at sed cras nisi.
+        </p>
+        <button>Learn more <img src="./assets/image/Arrow 1.png" alt="arrow1"></button>
       </div>
-      <div class="section3_img">
-        <img src="./assets/image/bro_1.png" alt="bro_1">
+
+      <div class="section1_2">
+        <img src="./assets/image/Ellipse 1.png" alt="shape_7">
+        <img src="./assets/image/bro.png" alt="bro">
       </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- services map section -->
-  <div class="section4">
-    <h1>Service Map</h1>
-    <div class="section4_1">
-      <div class="section4_11">
-        <h1>IT consulting</h1>
+    <!-- about section -->
+    <section class="about_section">
+      <div class="section2">
+        <div class="section2_1">
+          <h2>About Company
+          </h2>
+        </div>
+        <div class="section2_2">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget duis mi nunc bibendum. Tellus elementum nec
+            lorem eget dictumst. Risus in gravida eu,
+            enim lorem. Sed consequat ut suspendisse eros. Nunc nunc accumsan, viverra enim. Mi.
+          </p>
+        </div>
       </div>
-      <div class="section4_12">
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit viverra porta tortor, elementum ultrices. Blandit quam nec aliquam.
-          </li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit viverra porta tortor, elementum ultrices. Blandit quam nec aliquam.
-          </li>
-        </ul>
+    </section>
+
+    <!-- services section -->
+     <section class="services_section">
+      <div class="section3">
+        <h2>Our Services</h2>
+        <div class="section3_1">
+          <div class="section3_text">
+            <h3>Non-IT enterprises</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat bibendum sit felis, sollicitudin et. Nulla aliquet integer hac ac morbi.</p>
+            <button>Learn More <img src="./assets/image/Arrow 1.png" alt="arrow2"></button>
+          </div>
+          <div class="section3_img">
+            <img src="./assets/image/bro_1.png" alt="bro_1">
+          </div>
+        </div>
       </div>
-    </div>
-    <a href="#">View All Services</a>
-  </div>
+     </section>
 
-  <!-- form section -->
-  <div class="section5">
-    <div class="section5_1">
-      <h1>Contact Us</h1>
+     <!-- services map function -->
+      <section class="servicesmap_section">
+        <div class="section4">
+          <h2>Service Map</h2>
+          <div class="section4_1">
+            <div class="section4_11">
+              <h3>IT consulting</h3>
+            </div>
+            <div class="section4_12">
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit viverra porta tortor, elementum ultrices. Blandit quam nec aliquam.
+                </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit viverra porta tortor, elementum ultrices. Blandit quam nec aliquam.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#">View All Services</a>
+        </div>
+      </section>
 
-      <form action="#">
-        <input type="text" name="f_name" id="f_name" placeholder="Full Name">
-        <input type="email" name="email" id="email" placeholder="Email Address">
-        <input type="tel" name="p_number" id="p_number" placeholder="Phone Number">
-        <textarea name="message" id="message" placeholder="Have anything to say?" rows="12"></textarea>
-        <input type="submit" name="submit" value="Send">
-      </form>
-    </div>
+      <!-- form section -->
+       <section class="form_section">
+        <div class="section5">
+          <div class="section5_1">
+            <h1>Contact Us</h1>
+      
+            <form action="#">
+              <input type="text" name="f_name" id="f_name" placeholder="Full Name">
+              <input type="email" name="email" id="email" placeholder="Email Address">
+              <input type="tel" name="p_number" id="p_number" placeholder="Phone Number">
+              <textarea name="message" id="message" placeholder="Have anything to say?" rows="12"></textarea>
+              <button>Send</button>
+            </form>
+          </div>
+      
+          <div class="round_shape">
+            <img src="./assets/image/Ellipse 4.png" alt="Ellipse4">
+            <img src="./assets/image/Ellipse 4.png" alt="Ellipse4">
+            <img src="./assets/image/Ellipse 5.png" alt="Ellipse5">
+            <img src="./assets/image/Ellipse 5.png" alt="Ellipse5">
+          </div>
+        </div>
+       </section>
+  </main>
 
-    <div class="round_shape">
-      <img src="./assets/image/Ellipse 4.png" alt="Ellipse4">
-      <img src="./assets/image/Ellipse 4.png" alt="Ellipse4">
-      <img src="./assets/image/Ellipse 5.png" alt="Ellipse5">
-      <img src="./assets/image/Ellipse 5.png" alt="Ellipse5">
-    </div>
-  </div>
-
+  
   <!-- footer section -->
-  <div class="section6">
+  <footer>
     <p>Company Name</p>
     <p>Company , 2022 © All Rights Reserved</p>
-  </div>
+  </footer>
 </body>
+
 </html>
