@@ -4,7 +4,6 @@
   height: auto;
   box-sizing: border-box;
 }
-
 @font-face {
   font-family: 'GT Walsheim Pro';
   src: url('./assets/fonts/GTWalsheimPro-Regular.eot');
@@ -16,7 +15,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 :root {
   --font-family: 'GT Walsheim Pro';
   --normal-size: clamp(1.3em, 3vw, 1.9em);
@@ -24,15 +22,13 @@
   --small-size: clamp(1.1em, 3vw, 1.6em);
   --box-height: 500px;
   --side-padding: 0px 80px;
+  --scale: 1;
 }
-
 body {
   font-family: var(--font-family);
   max-width: 1900px;
   margin: 0px auto;
 }
-
-
 
 
 /* navbar */
@@ -45,15 +41,14 @@ nav {
   justify-content: space-between;
   padding: var(--side-padding);
 }
-
 .logo {
   width: 60px;
   height: 60px;
   background-color: #141414;
   border-radius: 50%;
   position: relative;
+  scale: var(--scale);
 }
-
 .shape_1 {
   width: 10px;
   height: 10px;
@@ -62,39 +57,35 @@ nav {
   margin-left: 50%;
   margin-top: 50%;
   transform: translate(-50%, -50%);
+  scale: var(--scale);
 }
-
 .white_round {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: #FFFFFF;
+  scale: var(--scale);
 }
-
 .shape_2 {
   position: absolute;
   top: -4px;
   left: -4px;
 }
-
 .shape_3 {
   position: absolute;
   top: -4px;
   left: 34px;
 }
-
 .shape_4 {
   position: absolute;
   top: 34px;
   left: -4px;
 }
-
 .shape_5 {
   position: absolute;
   top: 34px;
   left: 34px;
 }
-
 .shape_6 {
   width: 30px;
   height: 30px;
@@ -103,25 +94,22 @@ nav {
   position: absolute;
   top: 15px;
   left: 57px;
+  scale: var(--scale);
 }
-
 nav ul {
   display: flex;
   justify-content: flex-start;
 }
-
 nav ul li {
   list-style: none;
   margin: 0 50px;
 }
-
 nav ul li a {
   text-decoration: none;
   font-size: var(--small-size);
   font-weight: 500;
   color: #333333;
 }
-
 nav button {
   background-color: transparent;
   padding: 10px 30px;
@@ -133,23 +121,19 @@ nav button {
 
 
 /* secion1  main section*/
-
 main {
   padding: var(--side-padding);
 }
-
 .section1 {
   display: flex;
   justify-content: space-between;
   height: auto;
   padding: 50px 0px;
 }
-
 .section1_1 {
   width: 45%;
   align-self: center;
 }
-
 .section1_1 h2 {
   font-size: clamp(1.6em, 3vw, 3.75em);
   font-weight: 700;
@@ -159,7 +143,6 @@ main {
   -webkit-text-fill-color: transparent;
   color: #0048FF;
 }
-
 .section1_1 p {
   font-size: var(--small-size);
   font-weight: 500;
@@ -167,7 +150,6 @@ main {
   text-align: left;
   margin: 50px 0px;
 }
-
 .section1_1 button {
   font-size: var(--small-size);
   font-weight: 400;
@@ -177,12 +159,10 @@ main {
   background: linear-gradient(238.41deg, #09153F 1.24%, #002BC2 57.38%);
   color: #FFFFFF;
 }
-
 .section1_2 {
   width: 55%;
   position: relative;
 }
-
 .section1_2 img:first-child {
   position: absolute;
   top: 100px;
@@ -190,7 +170,6 @@ main {
   scale: 1.2;
   z-index: -1;
 }
-
 .section1_2 img:last-child {
   max-width: 735px;
   height: 600px;
@@ -205,7 +184,6 @@ main {
 .servicesmap_section {
   padding: 70px 0px;
 }
-
 .section2 {
   max-width: 1900px;
   background-color: #EDF7FF;
@@ -215,7 +193,6 @@ main {
   align-items: center;
   padding: 40px;
 }
-
 .section2_1 {
   width: 30%;
   height: 100%;
@@ -224,7 +201,6 @@ main {
   align-content: center;
   border-right: 5px solid #C4D4FF;
 }
-
 .section2_1 h2 {
   font-size: var(--heading-size);
   font-weight: 700;
@@ -232,12 +208,10 @@ main {
   width: 100px;
   margin: 0 auto;
 }
-
 .section2_2 {
   width: 70%;
   padding: 0px 150px;
 }
-
 .section2_2 p {
   font-size: var(--normal-size);
   font-weight: 400;
@@ -247,7 +221,6 @@ main {
 
 
 /* section3 & 4 services section*/
-
 .section3>h2,
 .section4>h2,
 .section5_1 h1 {
@@ -257,7 +230,6 @@ main {
   text-align: center;
   padding: 0px 0px 60px 0px;
 }
-
 .section3_1 {
   max-width: 1900px;
   height: var(--box-height);
@@ -267,29 +239,24 @@ main {
   justify-content: space-around;
   padding: 40px;
 }
-
 .section3_text {
   align-self: center;
   width: 60%;
   padding: 0 120px;
 }
-
 .section3_img {
   align-self: center;
   width: 40%;
 }
-
 .section3_img img {
-  min-width: 500px;
+  width: 500px;
 }
-
 .section3_text h3 {
   font-size: 37px;
   font-weight: 700;
   text-align: left;
   color: #002B9A;
 }
-
 .section3_text p {
   font-size: var(--normal-size);
   font-weight: 400;
@@ -299,7 +266,6 @@ main {
   width: 620px;
   margin: 70px 0px;
 }
-
 .section3_text button {
   font-size: var(--normal-size);
   font-weight: 400;
@@ -310,8 +276,8 @@ main {
   background-color: transparent;
 }
 
-/* section4  services map section*/
 
+/* section4  services map section*/
 .section4_1 {
   max-width: 1900px;
   height: var(--box-height);
@@ -320,25 +286,21 @@ main {
   justify-content: space-around;
   padding: 40px;
 }
-
 .section4_11 {
   width: 30%;
   align-self: center;
 }
-
 .section4_12 {
   width: 70%;
   align-self: center;
   padding: 0px 140px;
 }
-
 .section4_11 h3 {
   font-size: 37px;
   font-weight: 700;
   color: #002B9A;
   text-align: center;
 }
-
 .section4_12 ul li {
   font-size: var(--normal-size);
   font-weight: 400;
@@ -346,7 +308,6 @@ main {
   text-align: left;
   color: #555555;
 }
-
 .section4 a {
   font-size: var(--normal-size);
   font-weight: 500;
@@ -357,9 +318,7 @@ main {
 }
 
 
-
 /* section5  form section*/
-
 .section5 {
   max-width: 1900px;
   height: auto;
@@ -369,19 +328,16 @@ main {
   position: relative;
   padding: 40px;
 }
-
 .section5_1 {
   width: 55%;
   height: auto;
   align-self: center;
 }
-
 .section5_1 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 form input[type=text],
 input[type=email],
 input[type=tel],
@@ -395,11 +351,9 @@ textarea {
   border-radius: 5px;
   margin: 10px 0px;
 }
-
 form textarea {
   resize: none;
 }
-
 form button {
   font-size: var(--small-size);
   font-weight: 500;
@@ -411,25 +365,21 @@ form button {
   border-radius: 5px;
   margin: 0 auto;
 }
-
 .round_shape img:first-child {
   position: absolute;
   top: 6%;
   left: 4%;
 }
-
 .round_shape img:nth-child(2) {
   position: absolute;
   bottom: 6%;
   right: 4%;
 }
-
 .round_shape img:nth-child(3) {
   position: absolute;
   top: 28%;
   left: 15%;
 }
-
 .round_shape img:last-child {
   position: absolute;
   bottom: 28%;
@@ -437,9 +387,7 @@ form button {
 }
 
 
-
 /* section6 footer section */
-
 footer {
   max-width: 1900px;
   height: 100px;
@@ -447,20 +395,16 @@ footer {
   background-color: #333333;
   color: #FFFFFF;
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
-
-footer p:first-child {
-  width: 20%;
+footer p {
   font-size: var(--small-size);
   font-weight: 400;
   text-align: center;
 }
-
-footer p:last-child {
-  font-size: var(--small-size);
-  width: 80%;
-  padding: 0px 0px 0px 17%;
+footer p:last-child{
+  visibility: hidden;
 }
 
 
@@ -492,7 +436,7 @@ footer p:last-child {
   }
 
   .section3_img img {
-    min-width: 300px;
+    max-width: 400px;
   }
 
   .section3_text h3,
@@ -503,8 +447,19 @@ footer p:last-child {
   .section3_text p {
     margin: 40px 0px;
   }
+  .round_shape img:first-child {
+    scale: 0.8;
+    position: absolute;
+    top: 4%;
+    left: 2%;
+  }
+  .round_shape img:nth-child(2) {
+    scale: 0.8;
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+  }
 }
-
 /* for laptop */
 @media screen and (max-width: 1439px) and (min-width: 992px) {
 
@@ -555,271 +510,220 @@ nav button {
   font-size: var(--small-size);
   font-weight: 400;
 }
+
+/* section1 */
+.section1 {
+  padding: 40px 0px;
+}
+.section1_1 h2 {
+  line-height: 50px;
+}
+.section1_1 p {
+  line-height: 30px;
+  margin: 30px 0px;
+}
+.section1_2 img:first-child {
+  display: none;
+}
+.section1_2 img:last-child {
+  max-width: 435px;
+  height: 400px;
+}
+.about_section,
+.services_section,
+.servicesmap_section {
+  padding: 40px 0px;
 }
 
+/* section2 */
+.section2_2 {
+  padding: 0px 50px;
+}
+.section2_2 p {
+  line-height: 40px;
+}
+
+/* section3 */
+.section3>h2,
+.section4>h2,
+.section5_1 h1 {
+  padding: 0px 0px 50px 0px;
+}
+.section3_1 {
+  padding: 30px;
+}
+.section3_text {
+  align-self: center;
+  width: 60%;
+  padding: 0 40px;
+}
+.section3_img img {
+  max-width: 300px;
+}
+.section3_text h3 {
+  font-size: 30px;
+}
+.section3_text p {
+  line-height: 35px;
+  width: 500px;
+  margin: 20px 0px;
+}
+.section3_text button {
+  padding: 8px 30px;
+}
+
+/* section4 */
+.section4_1 {
+  padding: 30px;
+}
+.section4_12 {
+  padding: 0px 100px;
+}
+.section4_11 h3 {
+  font-size: 35px;
+}
+.section4_12 ul li {
+  line-height: 35px;
+}
+
+/* section5 */
+.round_shape img:first-child {
+  scale: 0.8;
+  position: absolute;
+  top: 3%;
+  left: 0%;
+}
+.round_shape img:nth-child(2) {
+  scale: 0.8;
+  position: absolute;
+  bottom: 3%;
+  right: 0%;
+}
+
+/* section6 */
+footer {
+  margin: 40px;
+}
+
+}
 /* for tablet */
-
-/* @media screen and (max-width: 991px) and (min-width: 768px){
+@media screen and (max-width: 991px) and (min-width: 768px){
   :root {
-    --margin: 30px;
+    --box-height: 250px;
+    --normal-size: clamp(0.7em, 3vw, 1em);
+    --heading-size: clamp(1.4em, 3vw, 1.8em);
+    --small-size: clamp(0.6em, 3vw, 0.9em);
+    --side-padding: 0px 30px;
+    --scale: 0.9;
   }
 
+  /* navbar */
+nav {
+  height: 100px;
+}
+.shape_6 {
+  top: 13px;
+  left: 53px;
+}
+nav ul li {
+  margin: 0 20px;
+}
+nav button {
+  padding: 6px 20px;
+}
 
-  .navbar {
-    height: 90px;
-  }
-  .logo {
-    width: 50px;
-    height: 50px;
-    top: 20px;
-    left: var(--margin);
-  }
-  .white_round {
-    width: 28px;
-    height: 28px;
-  }
-  .shape_2 {
-    position: absolute;
-    top: -6px;
-    left: -6px;
-  }
-  .shape_3 {
-    position: absolute;
-    top: -6px;
-    left: 30px;
-  }
-  .shape_4 {
-    position: absolute;
-    top: 30px;
-    left: -6px;
-  }
-  .shape_5 {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-  }
-  .shape_6 {
-    top: 12px;
-    left: 48px;
-  }
-  .nav_menu {
-    position: absolute;
-    top: 42%;
-    left: 18%;
-  }
-  .nav_menu ul li {
-    list-style: none;
-    margin-right: 28px;
-  }
-  .nav_menu ul li a {
-    font-size: 16px;
-  }
-  .navbar .button {
-    position: absolute;
-    top: 30px;
-    padding: 6px 20px 6px 20px;
-    font-size: 17px;
-  }
+/* section1 */
+.section1_1 h2 {
+  line-height: 40px;
+}
+.section1_1 p {
+  line-height: 25px;
+  margin: 20px 0px;
+}
+.section1_2 img:first-child {
+  display: none;
+}
+.section1_2 img:last-child {
+  max-width: 335px;
+  height: 300px;
+}
+.about_section,
+.services_section,
+.servicesmap_section {
+  padding: 30px 0px;
+}
 
+/* section2 */
+.section2_2 {
+  padding: 0px 50px;
+}
+.section2_2 p {
+  line-height: 25px;
+}
 
-  .section1 {
-    margin-top: 50px;
-    margin-bottom: 80px;
-  }
+/* section3 */
+.section3>h2,
+.section4>h2,
+.section5_1 h1 {
+  padding: 0px 0px 40px 0px;
+}
+.section3_1 {
+  padding: 30px;
+}
+.section3_text {
+  align-self: center;
+  width: 60%;
+  padding: 0 20px;
+}
+.section3_img img {
+  max-width: 200px;
+}
+.section3_text h3 {
+  font-size: 25px;
+}
+.section3_text p {
+  line-height: 20px;
+  width: 350px;
+  margin: 15px 0px;
+}
+.section3_text button {
+  padding: 6px 25px;
+}
 
-  .section1_1 {
-    width: 45%;
-  }
+/* section4 */
+.section4_1 {
+  padding: 30px;
+}
+.section4_12 {
+  padding: 0px 30px;
+}
+.section4_11 h3 {
+  font-size: 25px;
+}
+.section4_12 ul li {
+  line-height: 20px;
+}
 
-  .section1_1 h1 {
-    font-size: 25px;
-    line-height: 35px;
-    margin-bottom: 20px;
-  }
+/* section5 */
+.round_shape img{
+  display: none;
+}
+.section5 {
+  padding: 30px;
+}
+.section5_1 {
+  width: 75%;
+}
+form input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  margin: 8px 0px;
+}
 
-  .section1_1 p {
-    font-size: 13px;
-    line-height: 30px;
-    margin-bottom: 30px;
-  }
-
-  .section1_1 button {
-    font-size: 17px;
-    font-weight: 400;
-    padding: 8px 30px ;
-  }
-  .section1_2 img:first-child {
-    position: absolute;
-    top: -20px;
-    left: -130px;
-    scale: 0.5;
-  }
-  .section1_2 img:last-child {
-    width: 300px;
-    height: 300px;
-  }
-
-
-  .section2 {
-    height: 240px;
-    border-radius: 150px;
-    margin-bottom: 60px;
-  }
-
-  .section2_1 {
-    width: 240px;
-    height: 200px;
-    border-radius: 150px 0px 0px 150px;
-    left: 20px;
-    top: 20px;
-  }
-
-  .section2_1 h1 {
-    font-size: 30px;
-    margin-top: 110px;
-    margin-left: 115px;
-  }
-
-  .section2_2 p {
-    font-size: 15px;
-    line-height: 30px;
-    width: 410px;
-    left: 47%;
-  }
-
-
-
-  .section3,
-  .section4 {
-    margin-bottom: 40px;
-  }
-
-  .section3>h1,
-  .section4>h1,
-  .section5_1 h1 {
-    font-size: 30px;
-    margin-bottom: 40px;
-  }
-
-  .section3_1 {
-    height: 240px;
-    border-radius: 0px 150px 150px 0px;
-    margin-bottom: 60px;
-  }
-
-  .section3_text{
-    margin-left: 40px;
-  }
-  .section3_text h1 {
-    font-size: 20px;
-  }
-
-  .section3_text p {
-    font-size: 15px;
-    line-height: 22px;
-    width: 350px;
-    margin: 15px 0px;
-  }
-
-  .section3_text button {
-    font-size: 15px;
-    padding: 6px 25px;
-  }
-
-  .section3_img {
-    scale: 0.5;
-  }
-
-
-
-
-  .section4_1 {
-    height: 240px;
-    margin-bottom: 50px;
-  }
-
-  .section4_11 h1 {
-    font-size: 20px;
-  }
-
-  .section4_12 ul li {
-    font-size: 15px;
-    line-height: 28px;
-    width: 430px;
-  }
-
-  .section4 a {
-    font-size: 18px;
-  }
-
-
-
-
-  .section5 {
-    height: 600px;
-    margin-bottom: 50px;
-  }
-  .section5_1 {
-    width: 65%;
-    height: 500px;
-  }
-  .section5_1 h1 {
-    font-size: 40px !important;
-    margin-bottom: 30px;
-  }
-  .section5_1 form {
-    margin: 20px;
-  }
-
-  form input[type=text],
-  input[type=email],
-  input[type=tel],
-  textarea {
-    font-size: 16px;
-    padding: 8px;
-    margin-bottom: 10px;
-  }
-
-  form input[type=submit] {
-    font-size: 16px;
-  }
-
-  .round_shape img:first-child {
-    scale: 0.4;
-    position: absolute;
-    top:-5%;
-    left: -5%;
-  }
-
-  .round_shape img:nth-child(2) {
-    scale: 0.4;
-    position: absolute;
-    bottom: -5%;
-    right: -5%;
-  }
-
-  .round_shape img:nth-child(3) {
-    scale: 0.6;
-    position: absolute;
-    top: 16%;
-    left: 12%;
-  }
-
-  .round_shape img:last-child {
-    scale: 0.6;
-    position: absolute;
-    bottom: 16%;
-    right: 12%;
-  }
-
-
-
-  .section6 {
-    height: 70px;
-    margin-bottom: 40px;
-    padding: 0px 40px;
-  }
-  .section6 p {
-    font-size: 12.7px;
-  }
-} */
+/* section6 */
+footer {
+  margin: 30px;
+  height: 80px;
+}
+}
